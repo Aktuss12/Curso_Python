@@ -1,0 +1,12 @@
+git config --global user.name (nome)
+git config --global user.email (email)
+
+cd (diretorio para clonar o git)
+
+git clone (url do meu repositorio github)
+
+git add (arquivo dentro do repositorio)
+
+git commit -m ("commit do arquivo")
+
+git push origin main (adicionar o arquivo no repositorio)
