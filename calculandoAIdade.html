@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando a idade</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Calculando a idade</h2>
+        <label for="dataNascimento">Data de Nascimento:</label>
+        <input type="date" id="dataNascimento" name="dataNascimento">
+        <button onclick="calcularIdade()">Calcular Idade</button>
+        <p id="resultado"></p>
+    </div>
+
+    <script>
+
+        // Define uma função chamada 'calcularIdade' que será chamada quando o botão for clicado 
+        function calcularIdade(){
+
+            // Obtém o valor do campo de entrada (input) com o id 'dataNascimento', esse valor é a data que o usuario inseriu 
+            const dataNascimento = document.getElementById('dataNascimento').value;
+
+            // Verifica se o usuario inseriu uma data de nascimento. Se o campo estiver vazio, exibe um alerta pedindo para inserir a data
+            // e interrompe a execução da função com 'return'
+            if (!dataNascimento) {
+                alert("Insira sua data de nascimento");
+                return;
+            }
+
+            // Cria um objeto 'Date' a partir da data de nascimento fornecida, esse objeto permite manipular a data e obter detalhes como ano, mes e dia
+            const dataNasc = new Date(dataNascimento);
+
+            // Cria um objeto 'Date' com a data e hora atuais
+            const hoje = new Date();
+
+            // Calcula a idade inicial subtraindo o ano da data de nascimento do ano atual
+            let idade = hoje.getFullYear() - dataNasc.getFullYear();
+
+            // Calcula a diferença de meses entre o mes atual e o mes de nascimento
+            const mes = hoje.getMonth() - dataNasc.getMonth();
+
+            // Ajudsta a idade se ainda não passou o aniversario neste ano, faz isso verificando se o mes atual é menor que o mes de nascimento
+            // (mes < 0), ou se é o mesmo mes ('mes  === 0') mas o dia atual é menor que o dia de nascimento ('hoje.getDate() < dataNasc.getDate()'). 
+            // Se uma dessas condições for verdadeira, a idade é decrementada em um ano ('idade--').
+            if (mes < 0 || (mes === 0 && hoje.getDate() < dataNasc.getDate())){
+                idade--;
+            }
+
+            // Atualiza o conteudo elemento com o id 'resultado' para mostrar a idade calculada do usuario
+            document.getElementById('resultado').textContent = 'Sua idade é' + idade + ' anos';
+
+        }
+
+    </script>
+
+</body>
+</html>
