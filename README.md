@@ -12,4 +12,4 @@ Este repositório contém o projeto final do curso de Python, que é uma calcula
 
 Aqui está uma imagem do projeto em execução:
 
-![Imagem da Calculadora](https://postimg.cc/QVB4qbHn)
+![Imagem da Calculadora](https://i.postimg.cc/QVB4qbHn/calculadora.png)
