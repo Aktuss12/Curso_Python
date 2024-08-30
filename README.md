@@ -13,3 +13,22 @@ Este repositório contém o projeto final do curso de Python, que é uma calcula
 Aqui está uma imagem do projeto em execução:
 
 ![Imagem da Calculadora](https://i.postimg.cc/QVB4qbHn/calculadora.png)
+
+
+
+# Projeto de Jogo da Velha - Curso de Python
+
+Este repositório contém o projeto do curso de Python, que é um jogo da velha. Durante o desenvolvimento deste projeto, foram aplicados diversos conceitos aprendidos ao longo do curso, como lógica de jogo e estruturação de código.
+
+## Funcionalidades
+
+- **Jogabilidade**: Jogo para dois jogadores com interface para entrada de jogadas.
+- **Interface Gráfica**: Design simples e intuitivo para facilitar a interação.
+- **Verificação de Vitória**: Confirmação automática do vencedor ou empate após cada jogada.
+
+## Captura de Tela
+
+Aqui está uma imagem do projeto em execução:
+
+![Imagem do Jogo da Velha](https://postimg.cc/8JtJKrwM)
+![Imagem do Jogo da Velha](https://postimg.cc/jwb3QCSz)
