@@ -30,5 +30,5 @@ Este repositório contém o projeto do curso de Python, que é um jogo da velha.
 
 Aqui está uma imagem do projeto em execução:
 
-![Imagem do Jogo da Velha](https://postimg.cc/8JtJKrwM)
-![Imagem do Jogo da Velha](https://postimg.cc/jwb3QCSz)
+![Imagem do Jogo da Velha 1](https://i.postimg.cc/8JtJKrwM/jogo-da-velha1.png)
+![Imagem do Jogo da Velha 2](https://i.postimg.cc/jwb3QCSz/jogo-da-velha2.png)
