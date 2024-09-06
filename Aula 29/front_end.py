@@ -42,5 +42,18 @@ btn_atualizar = Button(esquerda_cima, text="Atualizar", width=10, height=1, back
                        anchor="center", relief=FLAT)
 btn_atualizar.grid(row=0, column=3, sticky=NSEW, pady=1)
 
+# Lista de exibição
+titulo_lista_exibicao = Label(frame_direita, text="Tarefas", width=37, height=1, pady=7, padx=10, relief=FLAT,
+                            anchor=W, font="Arial 18", fg=preto, bg=branco)
+titulo_lista_exibicao.grid(row=0, column=0, sticky=NSEW, pady=1)
+
+corpo_lista_exibicao = Listbox(frame_direita, font="Arial 10", width=1)
+corpo_lista_exibicao.grid(row=1, column=0, sticky=NSEW, pady=5)
+
+# Adição de itens na lista
+tarefas = ["Pagar boletos", "Gerar relatório", "Reunião empresarial", "Fazer pedidos"]
+for item in tarefas:
+    corpo_lista_exibicao.insert(END, item)
+    
 # rodando a janela
 janela.mainloop()

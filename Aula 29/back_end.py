@@ -1,7 +1,7 @@
 import sqlite3 as sql
 
 
-# criação do banco de dados
+# Criação do banco de dados
 banco = sql.connect("crud.db")
 
 
