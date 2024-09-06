@@ -1,4 +1,5 @@
 from tkinter import *
+from back_end import *
 
 # cores do projeto
 preto = "#000000"
@@ -51,9 +52,13 @@ corpo_lista_exibicao = Listbox(frame_direita, font="Arial 10", width=1)
 corpo_lista_exibicao.grid(row=1, column=0, sticky=NSEW, pady=5)
 
 # Adição de itens na lista
-tarefas = ["Pagar boletos", "Gerar relatório", "Reunião empresarial", "Fazer pedidos"]
-for item in tarefas:
-    corpo_lista_exibicao.insert(END, item)
-    
+def mostrar_itens():
+    tarefas = (buscar)
+    for item in tarefas:
+        corpo_lista_exibicao.insert(END, item[1])
+
+
+mostrar_itens()
+
 # rodando a janela
 janela.mainloop()

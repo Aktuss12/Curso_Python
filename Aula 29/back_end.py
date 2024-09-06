@@ -25,6 +25,9 @@ def buscar():
     return lista_afazeres
 
 
+
+print(buscar())
+
 def deletar(valor):
     with banco:
         cursor = banco.cursor()
